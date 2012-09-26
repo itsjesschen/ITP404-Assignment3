@@ -1,0 +1,42 @@
+.attendee,  .room {
+	display: inline-block;
+	border-radius: 5px;
+	background-color: #eee;
+	padding:15px;
+	margin: 15px;
+}
+.checkedIn {
+	background-color: #58FA58;
+}
+
+.checkedOut {
+	background-color: #FE2E2E;
+}
+
+.empty{
+	background-color: #F3F781;
+}
+
+.occupied{
+	background-color: #FFFF00;
+}
+
+.full{
+	background-color: #868A08;
+}
+.attendee .info, .room .info {
+	padding:10px 0;
+	text-align: center;
+}
+
+.attendee .info h3, .room .info h3  {
+	margin: 0;
+	padding:0;
+}
+
+.attendee .info p {
+	margin:5px 0;
+	padding:0;
+}
+
+

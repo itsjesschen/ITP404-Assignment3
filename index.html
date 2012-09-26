@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>jQuery example</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class = "registrationTool" >
+	<div class="attendee" id="P1">
+		<div class="info">
+			<h3>Person1</h3>
+			<p>
+				<a href="#" class="status">Click to check into room #</a>
+				<span class="roomNum">0</span>
+			</p>
+		</div>
+	</div>
+	<div class="attendee" id="P2">
+		<div class="info">
+			<h3>Person2</h3>
+			<p>
+				<a href="#" class="status">Click to check into room #</a>
+				<span class="roomNum">1</span>
+			</p>
+		</div>
+	</div>
+	<div class="attendee" id="P3">
+		<div class="info">
+			<h3>Person3</h3>
+			<p>
+				<a href="#" class="status">Click to check into room #</a>
+				<span class="roomNum">1</span>
+			</p>
+		</div>
+	</div>
+	<div class="attendee" id="P4">
+		<div class="info">
+			<h3>Person4</h3>
+			<p>
+				<a href="#" class="status">Click to check into room #</a>
+				<span class="roomNum">0</span>
+			</p>
+		</div>
+	</div>
+
+ 	<div class="room" id="Room0">
+		<div class="info">
+			<h3>Room #0</h3>
+			<p>
+				<span class="status">Currently Empty</span>
+				<span class="roomNum">0</span>
+			</p>
+		</div>
+	</div> 
+	 	<div class="room" id="Room1">
+		<div class="info">
+			<h3>Room 1</h3>
+			<p>
+				<span class="status">Currently Empty</span>
+				<span class="roomNum">1</span>
+			</p>
+		</div>
+	</div> 
+</div>
+</body>
+</html>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src= "attendee.js"></script>
+<script src= "room.js"></script>
+<script>
+	(function() {
+		var dt = new Person.Attendee({
+			el: '#P1'
+		});
+		var dt2 = new Person.Attendee({
+			el: '#P2'
+		});
+		var dt = new Person.Attendee({
+			el: '#P3'
+		});
+		var dt2 = new Person.Attendee({
+			el: '#P4'
+		});
+	})();
+
+</script>
